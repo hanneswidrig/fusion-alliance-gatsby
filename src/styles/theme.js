@@ -6,7 +6,7 @@ const theme = {
 		highlight: '#5b8bf7', // Light Blue
 	},
 	sizes: {
-		maxWidth: '1400px',
+		maxWidth: '960px',
 		maxWidthCentered: '650px',
 	},
 	responsive: {
