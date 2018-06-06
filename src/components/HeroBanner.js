@@ -9,16 +9,16 @@ const HeroSection = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 640px;
+  height: 652px;
   padding: 0px inherit;
 `
 
 const HeroBanner = props => (
-  <HeroSection>
-    <HeroBackground />
-    <HeroBlock />
-    <CallToAction />
-  </HeroSection>
+	<HeroSection>
+		<HeroBackground />
+		<HeroBlock />
+		<CallToAction />
+	</HeroSection>
 )
 
 export default HeroBanner

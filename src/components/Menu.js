@@ -7,7 +7,8 @@ import styledHeaderTheme from '../styles/styledHeaderTheme'
 const Header = styled.header`
   border-top: 6px solid ${styledHeaderTheme.colors.blue};
   background: ${styledHeaderTheme.colors.white};
-  width: 100%;
+	width: 100%;
+	font-family: ${props => props.theme.fonts.nettoBold};
 `
 const Nav = styled.nav`
   width: 100%;
@@ -38,36 +39,36 @@ const LogoSection = styled.section`
 const NavSection = styled.section``
 
 const activeLinkStyle = {
-  color: 'hsl(202,50%,50%)',
+	color: 'hsl(202,50%,50%)',
 }
 
 const Menu = () => {
-  return (
-    <Header>
-      <Nav>
-        <LogoSection>
-          <img src={logo} alt="logo" />
-        </LogoSection>
-        <NavSection>
-          <Link to="/expertise/" activeStyle={activeLinkStyle}>
-            EXPERTISE
+	return (
+		<Header>
+			<Nav>
+				<LogoSection>
+					<img src={logo} alt="logo" />
+				</LogoSection>
+				<NavSection>
+					<Link to="/expertise/" activeStyle={activeLinkStyle}>
+						EXPERTISE
           </Link>
-          <Link to="/products/" activeStyle={activeLinkStyle}>
-            PRODUCTS
+					<Link to="/products/" activeStyle={activeLinkStyle}>
+						PRODUCTS
           </Link>
-          <Link to="/about/" activeStyle={activeLinkStyle}>
-            ABOUT
+					<Link to="/about/" activeStyle={activeLinkStyle}>
+						ABOUT
           </Link>
-          <Link to="/contact/" activeStyle={activeLinkStyle}>
-            CONTACT
+					<Link to="/contact/" activeStyle={activeLinkStyle}>
+						CONTACT
           </Link>
-          <Link to="/careers/" activeStyle={activeLinkStyle}>
-            CAREERS
+					<Link to="/careers/" activeStyle={activeLinkStyle}>
+						CAREERS
           </Link>
-        </NavSection>
-      </Nav>
-    </Header>
-  )
+				</NavSection>
+			</Nav>
+		</Header>
+	)
 }
 
 export default Menu
