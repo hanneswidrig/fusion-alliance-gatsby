@@ -1,10 +1,21 @@
 import { injectGlobal } from 'styled-components'
+import { withPrefix } from 'gatsby-link'
 
 injectGlobal`
   /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
   */
+ 
+	@font-face {
+		font-family: 'NettoWeb';
+		src: url('${withPrefix('/fonts/NettoWeb.woff')}') format('woff');
+	}
+	@font-face {
+		font-family: 'NettoWeb-Bold';
+	  src: url('${withPrefix('/fonts/NettoWeb-Bold.woff')}') format('woff');		
+	}
+
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,

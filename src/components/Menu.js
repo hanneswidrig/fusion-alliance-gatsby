@@ -1,73 +1,74 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import logo from './../images/header-logo.png'
+import styledHeaderTheme from '../styles/styledHeaderTheme'
 
 const Header = styled.header`
-  background: ${props => props.theme.colors.base};
-  width: 100%;
-  padding: 1.5em 0;
+  border-top: 6px solid ${styledHeaderTheme.colors.blue};
+  background: ${styledHeaderTheme.colors.white};
+	width: 100%;
+	font-family: ${props => props.theme.fonts.nettoBold};
 `
 const Nav = styled.nav`
   width: 100%;
+  height: 96px;
   max-width: ${props => props.theme.sizes.maxWidth};
   margin: 0 auto;
-  padding: 0 1.5em;
-
-  ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  li {
-    display: inline-block;
-    margin-left: 1em;
-    &:first-child {
-      position: relative;
-      margin: 0;
-      flex-basis: 100%;
-    }
-  }
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
   a {
     text-decoration: none;
-    color: DarkGray;
+    color: ${styledHeaderTheme.colors.black};
+    padding: 24px 8px;
+    height: 100%;
     font-weight: 600;
     transition: all 0.2s;
-    border-bottom: 2px solid ${props => props.theme.colors.base};
     &:hover {
-      color: white;
+      background-color: ${styledHeaderTheme.colors.blackLinkHover};
     }
   }
 `
+const LogoSection = styled.section`
+  height: 48px;
+`
+const NavSection = styled.section``
 
 const activeLinkStyle = {
-  color: 'white',
+	color: 'hsl(202,50%,50%)',
 }
 
 const Menu = () => {
-  return (
-    <Header>
-      <Nav>
-        <ul>
-          <li>
-            <Link to="/" exact activeStyle={activeLinkStyle}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/about/" activeStyle={activeLinkStyle}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact/" activeStyle={activeLinkStyle}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </Nav>
-    </Header>
-  )
+	return (
+		<Header>
+			<Nav>
+				<LogoSection>
+					<img src={logo} alt="logo" />
+				</LogoSection>
+				<NavSection>
+					<Link to="/expertise/" activeStyle={activeLinkStyle}>
+						EXPERTISE
+          </Link>
+					<Link to="/products/" activeStyle={activeLinkStyle}>
+						PRODUCTS
+          </Link>
+					<Link to="/about/" activeStyle={activeLinkStyle}>
+						ABOUT
+          </Link>
+					<Link to="/contact/" activeStyle={activeLinkStyle}>
+						CONTACT
+          </Link>
+					<Link to="/careers/" activeStyle={activeLinkStyle}>
+						CAREERS
+          </Link>
+				</NavSection>
+			</Nav>
+		</Header>
+	)
 }
 
 export default Menu
