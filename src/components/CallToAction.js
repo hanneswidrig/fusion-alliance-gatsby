@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import styledHeaderTheme from '../styles/styledHeaderTheme'
 
 const Button = styled.a`
-	font-family: ${props => props.theme.fonts.netto};
   color: ${styledHeaderTheme.colors.blue};
   border: solid 2px ${styledHeaderTheme.colors.blue};
   border-radius: 4px;

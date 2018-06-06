@@ -5,6 +5,7 @@ import HeroBackground from './HeroBackground'
 import CallToAction from './CallToAction'
 
 const HeroSection = styled.section`
+	font-family: ${props => props.theme.fonts.netto};
   display: flex;
   justify-content: center;
   align-items: center;
