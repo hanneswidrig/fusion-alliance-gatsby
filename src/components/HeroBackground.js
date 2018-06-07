@@ -3,13 +3,12 @@ import styled from 'styled-components'
 import heroSVG from './../images/hero.svg'
 
 const HeroImg = styled.img`
-  position: absolute;
-	z-index: -1;
-	max-height: 652px;
+  z-index: -1;
+  max-height: 652px;
 `
 
 const HeroBackground = () => (
-	<HeroImg src={heroSVG} alt="Call to Action image" />
+  <HeroImg src={heroSVG} alt="Call to Action image" />
 )
 
 export default HeroBackground
