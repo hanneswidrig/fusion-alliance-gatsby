@@ -42,13 +42,11 @@ const Item = styled.li`
 `
 
 const Footer = () => (
-	<Wrapper>
-		<List>
-			<Item>
-				Hannes Widrig 2018
-      </Item>
-		</List>
-	</Wrapper>
+  <Wrapper>
+    <List>
+      <Item>Hannes Widrig 2018</Item>
+    </List>
+  </Wrapper>
 )
 
 export default Footer

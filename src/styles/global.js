@@ -15,6 +15,10 @@ injectGlobal`
 		font-family: 'NettoWeb-Bold';
 	  src: url('${withPrefix('/fonts/NettoWeb-Bold.woff')}') format('woff');		
 	}
+	@font-face {
+		font-family: 'MetaWeb-Normal';
+	  src: url('${withPrefix('/fonts/MetaWeb-Normal.woff')}') format('woff');		
+	}
 
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
