@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import logo from './../images/header-logo.png'
 import styledHeaderTheme from '../styles/styledHeaderTheme'
 import MdMenu from 'react-icons/lib/md/menu'
+import { MobileMenuButton } from './MobileMenuButton'
 
 const Header = styled.header`
   border-top: 6px solid ${styledHeaderTheme.colors.blue};
@@ -11,6 +12,7 @@ const Header = styled.header`
   width: 100%;
   font-family: ${props => props.theme.fonts.nettoBold};
 `
+
 const Nav = styled.nav`
   width: 100%;
   height: 80px;
@@ -29,6 +31,7 @@ const Nav = styled.nav`
     }
   }
 `
+
 const LogoSection = styled.section`
   height: 38px;
 
@@ -55,21 +58,6 @@ const LogoSection = styled.section`
 
 const NavSpacing = styled.div`
   padding: 32px;
-  @media screen and (min-width: ${props => props.theme.responsive.medium}) {
-    & {
-      display: none;
-    }
-  }
-`
-
-const MobileMenuButton = styled(Link)`
-  padding: 20px;
-  svg {
-    color: ${styledHeaderTheme.colors.black};
-    width: 24px;
-    height: 24px;
-  }
-
   @media screen and (min-width: ${props => props.theme.responsive.medium}) {
     & {
       display: none;
