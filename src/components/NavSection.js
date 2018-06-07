@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import styledHeaderTheme from '../styles/styledHeaderTheme'
 
-const NSection = styled.section`
+const Section = styled.section`
   display: none;
   a {
     color: ${styledHeaderTheme.colors.grey};
@@ -26,7 +26,7 @@ const NSection = styled.section`
 `
 
 const NavSection = () => (
-  <NSection>
+  <Section>
     <Link
       to="/expertise/"
       activeStyle={{ color: styledHeaderTheme.colors.activeLinkStyle }}
@@ -57,7 +57,7 @@ const NavSection = () => (
     >
       CAREERS
     </Link>
-  </NSection>
+  </Section>
 )
 
 export default NavSection

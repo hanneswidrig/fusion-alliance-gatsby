@@ -10,6 +10,7 @@ const LSection = styled.section`
   a {
     padding: 0 0 6px 0;
     margin: 0;
+    user-select: none;
   }
 
   a > img {
