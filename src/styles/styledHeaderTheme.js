@@ -2,7 +2,8 @@ const styledHeaderTheme = {
   colors: {
     white: '#FFFFFF',
     black: '#000000',
-    blackLinkHover: 'hsl(0, 2%, 98%)',
+    blackLinkHover: 'hsl(0, 98%, 2%)',
+    grey: '#777777',
     blue: '#007DC3',
     blueLinkHover: 'hsl(202, 0%, 100%)',
     orange: '#F68B20',
