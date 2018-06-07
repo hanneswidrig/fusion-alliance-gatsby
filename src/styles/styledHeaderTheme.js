@@ -12,6 +12,7 @@ const styledHeaderTheme = {
     greenHighlight: '#F8FAF5',
     purple: '#6F60AA',
     purpleHighlight: '#F6F5FA',
+    activeLinkStyle: 'hsl(202,50%,50%)',
   },
 }
 
