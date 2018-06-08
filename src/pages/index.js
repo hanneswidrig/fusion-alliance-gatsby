@@ -5,12 +5,12 @@ import HeroBanner from '../components/HeroBanner'
 
 const Index = () => {
   return (
-    <div>
+    <main>
       <SEO />
       <Container>
         <HeroBanner />
       </Container>
-    </div>
+    </main>
   )
 }
 
