@@ -3,16 +3,17 @@ import Helmet from 'react-helmet'
 import Container from '../components/Container'
 import PageTitle from '../components/PageTitle'
 import SEO from '../components/SEO'
+import config from '../utils/siteConfig'
 
 const Careers = () => {
   const postNode = {
-    title: `Careers`,
+    title: `Careers - ${config.siteTitle}`,
   }
 
   return (
     <div>
       <Helmet>
-        <title>{`Careers`}</title>
+        <title>{`Careers - ${config.siteTitle}`}</title>
       </Helmet>
       <SEO postNode={postNode} pagePath="Careers" customTitle />
 
