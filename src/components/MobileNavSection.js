@@ -4,14 +4,23 @@ import styled from 'styled-components'
 import styledHeaderTheme from '../styles/styledHeaderTheme'
 
 const Section = styled.section`
-  user-select: none;
   display: ${props => (props.active ? 'flex' : 'none')};
+  flex-direction: column;
+  user-select: none;
+
+  a {
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: ${styledHeaderTheme.colors.blackLinkHover};
+  }
 `
 
 const NavSection = props => {
   return (
     <Section active={props.active}>
       <Link
+        exact
         to="/"
         activeStyle={{ color: styledHeaderTheme.colors.activeLinkStyle }}
       >
