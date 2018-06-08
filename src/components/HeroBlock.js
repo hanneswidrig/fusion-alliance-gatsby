@@ -23,6 +23,11 @@ const HeroTitle = styled.div`
   font-size: calc(16px + 2.75vw);
   font-family: ${props => props.theme.fonts.nettoBold};
   color: ${styledHeaderTheme.colors.blue};
+  @media screen and (min-width: ${props => props.theme.responsive.large}) {
+    & {
+      font-size: 3rem;
+    }
+  }
 `
 
 const HeroTitleDetails = styled.div`

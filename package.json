@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-gcn",
-  "description": "A starter template to build amazing static websites with Gatsby, Contentful and Netlify",
-  "version": "1.2.1",
-  "repository": "https://github.com/ryanwiemer/gatsby-starter-gcn",
-  "author": "Ryan Wiemer <ryan@ryanwiemer.com>",
+  "name": "fusion-alliance",
+  "description": "Unsolicited redesign of fusionalliance.com",
+  "version": "0.7.0",
+  "repository": "https://github.com/hanneswidrig/fusion-alliance",
+  "author": "Hannes Widrig<hanneswidrig@gmail.com>",
   "dependencies": {
     "chalk": "^2.4.1",
     "contentful-import": "^7.0.1",
@@ -29,6 +29,7 @@
     "path": "^0.12.7",
     "prismjs": "^1.14.0",
     "react-helmet": "^5.2.0",
+    "react-icons": "^2.2.7",
     "styled-components": "^3.3.0",
     "whatwg-fetch": "^2.0.4"
   },
