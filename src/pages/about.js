@@ -5,23 +5,23 @@ import PageTitle from '../components/PageTitle'
 import SEO from '../components/SEO'
 import config from '../utils/siteConfig'
 
-const Products = () => {
+const About = () => {
   const postNode = {
-    title: `Products - ${config.siteTitle}`,
+    title: `About - ${config.siteTitle}`,
   }
 
   return (
     <div>
       <Helmet>
-        <title>{`Products - ${config.siteTitle}`}</title>
+        <title>{`About - ${config.siteTitle}`}</title>
       </Helmet>
-      <SEO postNode={postNode} pagePath="products" customTitle />
+      <SEO postNode={postNode} pagePath="about" customTitle />
 
       <Container>
-        <PageTitle>Products</PageTitle>
+        <PageTitle>About</PageTitle>
       </Container>
     </div>
   )
 }
 
-export default Products
+export default About

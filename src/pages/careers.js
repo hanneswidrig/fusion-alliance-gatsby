@@ -15,7 +15,7 @@ const Careers = () => {
       <Helmet>
         <title>{`Careers - ${config.siteTitle}`}</title>
       </Helmet>
-      <SEO postNode={postNode} pagePath="Careers" customTitle />
+      <SEO postNode={postNode} pagePath="careers" customTitle />
 
       <Container>
         <PageTitle>Careers</PageTitle>
