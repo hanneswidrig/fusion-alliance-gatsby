@@ -2,17 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import HeroBlock from './HeroBlock'
 import heroSVG from './../images/hero.svg'
-// import videoBackground from './../images/test.png'
-
-const Filler = styled.div`
-  height: ${props => props.height}px;
-`
+import videoBackground from './../images/test.png'
 
 const HeroBackground = styled.img`
   z-index: -99;
   max-height: 652px;
-  position: absolute;
-  top: 0px;
 `
 
 const HeroSection = styled.section`
@@ -25,48 +19,51 @@ const HeroSection = styled.section`
   position: relative;
 `
 
-// const VideoBackground = styled.img`
-//   z-index: -1;
-//   position: absolute;
-//   bottom: 0px;
-//   height: 75px;
-// `
+const VideoBackground = styled.img`
+  z-index: -1;
+`
 
 class HeroBanner extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       height: 0,
+      originalSize: {
+        height: 633,
+        width: 918,
+        ratio: 1.45,
+      },
     }
     this.updateHeight = this.updateHeight.bind(this)
   }
 
   updateHeight() {
-    this.setState({ height: 0 }) // REF IMG
+    const prevState = this.state
+    const windowWidth = window.innerWidth - 30
+    console.log(windowWidth)
+    if (windowWidth < 918) {
+      this.setState({
+        height: windowWidth / prevState.originalSize.ratio,
+        originalSize: prevState.originalSize,
+      })
+    } else this.setState(prevState)
   }
 
   componentDidMount() {
     this.updateHeight()
-    window.addEventListener('load', this.updateHeight)
     window.addEventListener('resize', this.updateHeight)
   }
 
   componentWillUnmount() {
-    window.removeEventListener('load', this.updateHeight)
     window.removeEventListener('resize', this.updateHeight)
   }
 
   render() {
     return (
-      <HeroSection>
-        <Filler height={this.state.height} />
-        <HeroBackground
-          className="hero-svg"
-          src={heroSVG}
-          alt="Call to Action image"
-        />
+      <HeroSection height={this.state.height}>
+        <HeroBackground src={heroSVG} alt="Call to Action image" />
         <HeroBlock />
-        {/* <VideoBackground src={videoBackground} alt="background image" /> */}
+        <VideoBackground src={videoBackground} alt="background image" />
       </HeroSection>
     )
   }
