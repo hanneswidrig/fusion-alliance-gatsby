@@ -2,12 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import HeroBlock from './HeroBlock'
 import heroSVG from './../images/hero.svg'
+<<<<<<< HEAD
 import videoBackground from './../images/test.png'
 
 const HeroBackground = styled.img`
   z-index: -99;
   max-height: 652px;
 `
+=======
+>>>>>>> 8ac35d3
 
 const HeroSection = styled.section`
   font-family: ${props => props.theme.fonts.netto};
@@ -16,6 +19,7 @@ const HeroSection = styled.section`
   align-items: center;
   flex-direction: column;
   padding: 0px 20px;
+<<<<<<< HEAD
   position: relative;
 `
 
@@ -68,5 +72,29 @@ class HeroBanner extends React.Component {
     )
   }
 }
+=======
+  @media screen and (max-width: ${props => props.theme.responsive.small}) {
+    & {
+      min-height: 250px;
+      height: calc(100vw - 200px);
+    }
+    img {
+      display: none;
+    }
+  }
+`
+
+const HeroImg = styled.img`
+  z-index: -1;
+  max-height: 652px;
+`
+
+const HeroBanner = () => (
+  <HeroSection>
+    <HeroImg src={heroSVG} alt="Call to Action image" />
+    <HeroBlock />
+  </HeroSection>
+)
+>>>>>>> 8ac35d3
 
 export default HeroBanner
