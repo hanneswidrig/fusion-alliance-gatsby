@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import styledHeaderTheme from '../styles/styledHeaderTheme'
-import videoBackground from './../images/test.png'
+import videoBackground from './../images/waves.png'
 
 const VideoSection = styled.section`
   display: flex;
