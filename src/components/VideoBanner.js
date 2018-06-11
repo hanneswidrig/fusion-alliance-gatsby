@@ -8,7 +8,7 @@ const VideoSection = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0px 20px;
+  position: relative;
 `
 
 const Header = styled.h1`
@@ -17,20 +17,34 @@ const Header = styled.h1`
   font-size: calc(16px + 1.5vw);
   padding: 10px 0px;
   text-align: center;
-
-  @media screen and (max-width: ${props => props.theme.responsive.small}) {
-    & {
-      padding-top: 120px;
-    }
-  }
 `
 
 const VideoBackground = styled.img`
   z-index: -1;
-  position: absolute;
+  margin-top: -150px;
+  width: 100%;
+  max-height: 640px;
   @media screen and (max-width: ${props => props.theme.responsive.small}) {
     & {
-      height: 450px;
+      height: 320px;
+    }
+  }
+`
+
+const FloatingContainer = styled.div`
+  position: absolute;
+  height: 67%;
+  width: 67%;
+
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: ${props => props.theme.responsive.small}) {
+    & {
+      margin-top: 20px;
     }
   }
 `
@@ -39,15 +53,13 @@ const VideoBanner = () => (
   <VideoSection>
     <Header>FUSION ALLIANCE TRANSFORMS BUSINESS</Header>
     <VideoBackground src={videoBackground} alt="background image" />
-    <div>
+    <FloatingContainer>
       <iframe
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/wEwEVeiSCZQ"
+        src="https://www.youtube.com/embed/wEwEVeiSCZQ?rel=0&amp;showinfo=0"
         frameBorder="0"
         allowFullScreen
       />
-    </div>
+    </FloatingContainer>
   </VideoSection>
 )
 
