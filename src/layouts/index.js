@@ -28,10 +28,8 @@ const Template = ({ children }) => {
         <div className="siteContent">
           <Menu />
           {children()}
+          <Footer />
         </div>
-      </ThemeProvider>
-      <ThemeProvider theme={theme}>
-        <Footer />
       </ThemeProvider>
     </div>
   )
