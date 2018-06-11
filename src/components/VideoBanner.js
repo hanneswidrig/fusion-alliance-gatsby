@@ -38,6 +38,12 @@ const FloatingContainer = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  @media screen and (max-width: ${props => props.theme.responsive.small}) {
+    & {
+      height: 25vh;
+    }
+  }
 `
 
 const VideoBanner = () => (
