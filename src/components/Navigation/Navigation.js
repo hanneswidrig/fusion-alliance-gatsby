@@ -21,7 +21,7 @@ const NavBar = styled.section`
   height: 80px;
   max-width: ${props => props.theme.sizes.maxWidth};
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

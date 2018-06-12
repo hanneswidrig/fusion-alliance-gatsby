@@ -10,7 +10,7 @@ const Button = styled.a`
   text-decoration: none;
   padding: 10px 80px 6px 80px;
   transition: 125ms ease-in;
-  background-color: #ffffff;
+  background-color: #fff;
 
   &:hover {
     transform: scale(1.1);

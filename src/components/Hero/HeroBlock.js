@@ -30,7 +30,7 @@ const HeroTitle = styled.div`
 
 const HeroTitleDetails = styled.div`
   font-family: ${props => props.theme.fonts.metaWeb};
-  padding: 8px 0px 14px 0px;
+  padding: 8px 0 14px 0;
   line-height: 1.25rem;
   width: 50%;
 `

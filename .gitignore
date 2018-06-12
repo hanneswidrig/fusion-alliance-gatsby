@@ -7,3 +7,4 @@ yarn*
 npm-debug.log
 package-lock.json
 .contentful.json
+.vscode/

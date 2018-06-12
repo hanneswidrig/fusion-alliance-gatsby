@@ -10,7 +10,7 @@ const HeroSection = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0px 20px;
+  padding: 0 20px;
 
   @media screen and (max-width: ${props => props.theme.responsive.small}) {
     & {
