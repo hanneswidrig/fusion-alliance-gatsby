@@ -2,9 +2,9 @@ import React from 'react'
 import sortBy from 'lodash/sortBy'
 import Helmet from 'react-helmet'
 import config from '../utils/siteConfig'
-import Card from '../components/Card'
-import CardList from '../components/CardList'
-import PageTitle from '../components/PageTitle'
+import Card from '../components/Examples/Card'
+import CardList from '../components/Examples/CardList'
+import PageTitle from '../components/Examples/PageTitle'
 import Container from '../components/Container'
 
 const TagTemplate = ({ data }) => {

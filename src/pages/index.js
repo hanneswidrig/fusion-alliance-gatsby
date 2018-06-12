@@ -1,8 +1,8 @@
 import React from 'react'
 import Container from '../components/Container'
 import SEO from '../components/SEO'
-import HeroBanner from '../components/HeroBanner'
-import VideoBanner from '../components/VideoBanner'
+import HeroBanner from '../components/Hero/HeroBanner'
+import VideoBanner from '../components/Hero/VideoBanner'
 
 const Index = () => {
   return (

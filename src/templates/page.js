@@ -2,8 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import config from '../utils/siteConfig'
 import Container from '../components/Container'
-import PageTitle from '../components/PageTitle'
-import PageBody from '../components/PageBody'
+import PageTitle from '../components/Examples/PageTitle'
+import PageBody from '../components/Examples/PageBody'
 import SEO from '../components/SEO'
 
 const PageTemplate = ({ data }) => {

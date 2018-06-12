@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Container from '../components/Container'
-import PageTitle from '../components/PageTitle'
+import PageTitle from '../components/Examples/PageTitle'
 import SEO from '../components/SEO'
 import config from '../utils/siteConfig'
 
