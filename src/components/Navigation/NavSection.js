@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import styledHeaderTheme from '../styles/styledHeaderTheme'
+import styledHeaderTheme from '../../styles/styledHeaderTheme'
 
 const Section = styled.section`
   display: none;

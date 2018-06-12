@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import MdMenu from 'react-icons/lib/md/menu'
-import styledHeaderTheme from '../styles/styledHeaderTheme'
+import styledHeaderTheme from '../../styles/styledHeaderTheme'
 
 const MobileMenuWrapper = styled(Link)`
   padding: 20px;

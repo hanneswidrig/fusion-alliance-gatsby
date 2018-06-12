@@ -2,7 +2,7 @@ import Navigation from './Navigation'
 
 import React from 'react'
 import styled from 'styled-components'
-import styledHeaderTheme from '../styles/styledHeaderTheme'
+import styledHeaderTheme from '../../styles/styledHeaderTheme'
 
 const Header = styled.header`
   border-top: 6px solid ${styledHeaderTheme.colors.blue};

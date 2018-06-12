@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import HeroBlock from './HeroBlock'
-import heroSVG from './../images/hero.svg'
-import videoBackground from './../images/waves.png'
+import heroSVG from './../../images/hero.svg'
+import videoBackground from './../../images/waves.png'
 
 const HeroSection = styled.section`
   font-family: ${props => props.theme.fonts.netto};

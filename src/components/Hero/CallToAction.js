@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import styledHeaderTheme from '../styles/styledHeaderTheme'
+import styledHeaderTheme from '../../styles/styledHeaderTheme'
 
 const Button = styled.a`
   color: ${styledHeaderTheme.colors.blue};
@@ -8,7 +8,7 @@ const Button = styled.a`
   border-radius: 4px;
   font-size: 1.25rem;
   text-decoration: none;
-  padding: 12px 80px 6px 80px;
+  padding: 10px 80px 6px 80px;
   transition: 125ms ease-in;
   background-color: #ffffff;
 

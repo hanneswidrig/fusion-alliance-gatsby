@@ -5,7 +5,7 @@ import MobileNavSection from './MobileNavSection'
 import React from 'react'
 import styled from 'styled-components'
 import MdMenu from 'react-icons/lib/md/menu'
-import styledHeaderTheme from '../styles/styledHeaderTheme'
+import styledHeaderTheme from '../../styles/styledHeaderTheme'
 
 const NavSpacing = styled.div`
   padding: 32px;

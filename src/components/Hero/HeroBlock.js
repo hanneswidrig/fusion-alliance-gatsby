@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import styledHeaderTheme from '../styles/styledHeaderTheme'
+import styledHeaderTheme from '../../styles/styledHeaderTheme'
 import CallToAction from './CallToAction'
 
 const HeroWrapper = styled.div`

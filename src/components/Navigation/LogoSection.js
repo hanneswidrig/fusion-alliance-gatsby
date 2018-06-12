@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import logo from './../images/header-logo.png'
-import styledHeaderTheme from '../styles/styledHeaderTheme'
+import logo from './../../images/header-logo.png'
+import styledHeaderTheme from '../../styles/styledHeaderTheme'
 
 const LSection = styled.section`
   height: 38px;
